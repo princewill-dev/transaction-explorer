@@ -32,7 +32,11 @@ SECRET_KEY = 'django-insecure-_l7io@#g6asr2!%i$*kxq21=yldxqvjwuqd$hn*8o5mo2hqu0z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'transaction-explorer-production.up.railway.app',
+]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOWED_ORIGINS = [
     "transaction-explorer-production.up.railway.app",
