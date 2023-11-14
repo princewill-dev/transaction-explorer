@@ -57,6 +57,8 @@ INSTALLED_APPS = [
     'version1',
     'rest_framework',
     'drf_yasg',
+    'whitenoise.runserver_nostatic',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
