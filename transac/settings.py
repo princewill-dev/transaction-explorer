@@ -41,7 +41,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOWED_ORIGINS = [
     'https://transaction-explorer-production.up.railway.app',
-    'transaction-explorer-production.up.railway.app'
+    'transaction-explorer-production.up.railway.app',
+    'https://https://transaction-explorer-production.up.railway.app',  # Add the origin of the request here
 ]
 
 # Application definition
@@ -80,6 +81,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'transac.urls'
