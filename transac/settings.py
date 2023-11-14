@@ -34,12 +34,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'https://transaction-explorer-production.up.railway.app',
+    'transaction-explorer-production.up.railway.app',
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://transaction-explorer-production.up.railway.app",
+    'https://transaction-explorer-production.up.railway.app',
+    'transaction-explorer-production.up.railway.app'
 ]
 
 # Application definition
